@@ -9,7 +9,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* CSS Reset by Eric Meyer /*
+/* CSS Reset by Eric Meyer */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -127,7 +127,7 @@ body.dark-mode {
 
 .mobile-nav .menu {
   position: absolute;
-  top: 90%;
+  top: 120%;
   left: 0;
   right: 0;
   display: none;
@@ -150,7 +150,7 @@ nav li {
 
 nav li:hover, .menu-button:hover {
   background-color: var(--blue-bulletin);
-  border: 2px solid var(--news-flash);
+  border: 1px solid var(--news-flash);
 }
 
 nav li a {
@@ -175,13 +175,46 @@ header {
 }
 
 h1 {
-  margin-block-start: 0;
-  margin-block-end: 0;
   margin: 0em 0em .375em 0em;
 }
 
 main {
   padding: 0px 30px 10px 30px;
+}
+
+p.tagline {
+  margin: 0 0 1.25rem 0;
+}
+
+main h2:nth-of-type(1) {
+  margin: 3rem 0 .75rem 0;
+}
+
+blockquote.tagline {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+main h2:nth-of-type(2) {
+  margin: 3rem 0 1rem 0;
+}
+
+main section.red-container {
+  background-color: var(--news-flash);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main section.red-container video {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+hr {
+  border: none;
+  border-top: 0.25vw solid var(--watchdog-white);
+  margin: 0.25rem auto 0.5rem auto;
 }
 
 /* ADD Global Text Styles */
@@ -199,29 +232,49 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-heading);
-  font-weight: 600;
 }
 
 h1 {
   font-size: 3rem;
   color: var(--watchdog-white);
+  font-weight: 600;
 }
 
 h2 {
   font-size: 2rem;
   color: var(--truth-text);
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.5rem;
   color: var(--truth-text);
+  font-weight: 475;
 }
 
 .tagline {
-  color: var(--watchdog-white);
   font-family: var(--font-heading);
-  margin: 0 0 1.25rem 0;
+  font-weight: 500;
 }
+
+p.tagline {
+  color: var(--watchdog-white);
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.red-container h3 {
+  color: var(--watchdog-white);
+  line-height: 2rem;
+}
+
+.red-container p {
+  color: var(--watchdog-white);
+}
+
+
 
 /* ///ADD/// medium styles 620px */
 
