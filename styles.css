@@ -109,12 +109,111 @@ body.dark-mode {
   border-radius: 4px;
 }
 
-/* ///ADD/// Navigation Styles */
+/* ADD Navigation Styles */
+.mobile-nav {
+  position: relative
+}
 
-/* ///ADD/// Global Layout Styles */
+.menu-button {
+  display: block;
+  padding: 1rem;
+  color: var(--watchdog-white);
+  background-color: var(--news-flash);
+  text-align: center;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: default;
+}
 
-/* ///ADD/// Global Text Styles */
+.mobile-nav .menu {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: var(--blue-bulletin);
+  list-style: none;
+  padding: 0;  
+}
 
+#menu-toggle:checked+ .menu-button + .menu {
+  display: block;
+}
+
+nav li {
+  text-align: center;
+  background-color:var(--news-flash);
+  padding: 1rem;
+  margin-bottom: 0.20rem;
+}
+
+nav li:hover, .menu-button:hover {
+  background-color: var(--blue-bulletin);
+  border: 1.5px solid var(--news-flash);
+}
+
+nav li a {
+  color: var(--watchdog-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+/* ADD Global Layout Styles */
+body {
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--blue-bulletin);
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+h1 {
+  margin: 0em 0em .25em 0em;
+}
+
+main {
+  padding: 0px 30px 10px 30px;
+}
+
+/* ADD Global Text Styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--truth-text);
+  background-color: var(--watchdog-white);
+  
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--watchdog-white);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--truth-text);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--truth-text);
+}
+
+.tagline {
+  color: var(--watchdog-white);
+  font-family: var(--font-heading);
+}
 
 /* ///ADD/// medium styles 620px */
 
