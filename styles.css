@@ -196,13 +196,20 @@ blockquote.tagline {
 }
 
 main h2:nth-of-type(2) {
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 .75rem 0;
 }
 
 main section.red-container {
   background-color: var(--news-flash);
-  padding: 1.5rem;
-  margin-bottom: 1rem;
+  padding: 1.25rem;
+  margin-bottom: .75rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  transform: scale(1);
+}
+
+main section.red-container:hover {
+  transform: scale(1.03);
 }
 
 main section.red-container video {
