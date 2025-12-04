@@ -97,6 +97,7 @@ body.dark-mode {
   position: absolute;
   transform: translateY(-500%);
   transition: transform 0.5s;
+  font-family: var(--font-body);
 }
 
 .skip-link:focus {
@@ -258,6 +259,9 @@ form {
   box-shadow: var(--shadow);
   border: 1px solid var(--blue-bulletin);
   color: var(--watchdog-white);
+  font-optical-sizing: auto;
+  font-weight: 380;
+  font-style: normal;
 }
 
 label, input[type="text"], input[type="tel"] {
@@ -374,8 +378,6 @@ footer small {
   text-align: center;
 }
 
-
-
 /* ADD Global Text Styles */
 html {
   font-size: 16px;
@@ -396,32 +398,56 @@ h1, h2, h3 {
 h1 {
   font-size: 3rem;
   color: var(--watchdog-white);
-  font-weight: 600;
+  font-optical-sizing: auto;
+  font-weight: 331;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 109.4;
 }
 
 h2 {
   font-size: 2rem;
   color: var(--truth-text);
-  font-weight: 600;
+  font-optical-sizing: auto;
+  font-weight: 331;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 105;
 }
 
 h3 {
   font-size: 1.5rem;
   color: var(--truth-text);
-  font-weight: 475;
+  font-optical-sizing: auto;
+  font-weight: 331;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 .tagline {
   font-family: var(--font-heading);
-  font-weight: 500;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 90;
 }
 
 p.tagline {
   color: var(--watchdog-white);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 90;
 }
 
 p {
   line-height: 1.5rem;
+  font-optical-sizing: auto;
+  font-weight: 425;
+  font-style: normal;
 }
 
 .red-container h3 {
@@ -438,7 +464,9 @@ p {
   line-height: 2rem;
 }
 
-
+.required {
+  color: var(--blue-bulletin);
+}
 
 /* ///ADD/// medium styles 620px */
 
