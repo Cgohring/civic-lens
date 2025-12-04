@@ -494,7 +494,7 @@ p {
     display: inline-block;
     padding: .75rem .5rem;
     background-color: var(--news-flash);
-    border: 2px solid var(--news-flash);
+    border: 1px solid var(--news-flash);
     font-size: 1rem;
   }
 
@@ -504,6 +504,32 @@ p {
 
   .mobile-nav .menu li:last-child {
     margin: 0;
+  }
+
+  .red-container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 .5rem .75rem .5rem;
+    gap: .20rem;
+  }
+
+  .red-container {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr auto;
+  }
+
+  .red-container hr {
+    border: none;
+    border-top: 1px solid var(--watchdog-white);
+    width: 100%;
+    margin: 0;
+  }
+
+  .red-container video {
+    width: 100%;
+    height: auto;
+    align-self: end;
   }
 }
 
@@ -520,8 +546,26 @@ p {
 }
 */
 
-/* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+/* Interaction Queries for color scheme light and dark and motion preference */
+@media (prefers-color-scheme: light) {
+  body{
+    background: var(--watchdog-white);
+    color: var(--truth-text);
+  }
+}
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--truth-text);
+    color: var(--watchdog-white);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+  }
+}
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
