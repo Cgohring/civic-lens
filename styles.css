@@ -353,6 +353,13 @@ footer ul {
 footer ul li {
   background-color: var(--news-flash);
   padding: .75rem;
+  border: 1px solid var(--news-flash);
+}
+
+footer ul li:hover {
+  background-color: var(--blue-bulletin);
+  border: 1px solid var(--news-flash);
+  cursor: pointer;
 }
 
 footer ul li a {
