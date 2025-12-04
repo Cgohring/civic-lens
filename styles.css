@@ -468,14 +468,57 @@ p {
   color: var(--blue-bulletin);
 }
 
-/* ///ADD/// medium styles 620px */
+/* ADD medium styles 620px */
+@media screen and (min-width:620px) {
+  .menu-button {
+    display: none;
+  }
 
+  .mobile-nav input[type="checkbox"] ~ .menu {
+    display: flex;
+    flex-direction: row;
+    position: static; 
+    gap: 1rem;
+    padding: 0;
+    background: none;
+  }
 
-/* ///ADD/// large styles 920px */
+  .mobile-nav .menu li{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background:none;
+  }
 
+  .mobile-nav .menu li a {
+    display: inline-block;
+    padding: .75rem .5rem;
+    background-color: var(--news-flash);
+    border: 2px solid var(--news-flash);
+    font-size: 1rem;
+  }
 
-/* ///ADD/// x-large styles 1024px */
+  .mobile-nav .menu li a:hover {
+    background-color: var(--blue-bulletin);
+  }
 
+  .mobile-nav .menu li:last-child {
+    margin: 0;
+  }
+}
+
+/*  large styles 920px */
+/*@media screen and (min-width:920px) {
+
+}
+*/
+/* x-large styles 1024px */
+/*@media screen and (min-width:1024px) {
+  div {
+    max-width: 1024px;
+  }
+}
+*/
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
 
