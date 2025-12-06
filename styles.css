@@ -493,6 +493,7 @@ body.dark-mode .article-container hr {
     width: 100%;
     max-width: 920px;
     padding: 0 1rem;
+    text-align: left;
   }
 
   .menu-button {
