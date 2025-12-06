@@ -387,7 +387,7 @@ body {
   font-size: 1rem;
   color: var(--truth-text);
   background-color: var(--watchdog-white);
-  
+  line-height: 1.5;
 }
 
 h1, h2, h3 {
@@ -563,10 +563,37 @@ body.dark-mode .article-container hr {
   margin: 0;
   gap: .5rem;
 }
+  form {
+    max-width: 920px;
+  }
+  .form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+  }
 
+  .form-container fieldset {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-container #submit {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  form div:last-of-type {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    margin-bottom: .5rem;
+  }
 }
-
-
 
 /*  large styles 920px */
 @media screen and (min-width:920px) {
