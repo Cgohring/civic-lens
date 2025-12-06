@@ -470,6 +470,19 @@ p {
 
 /* ADD medium styles 620px */
 @media screen and (min-width:620px) {
+  header, main, footer {
+  width: 100%;
+  box-sizing: border-box;
+  }
+
+  .inner-content-wrapper {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 920px;
+    padding: 0 1rem;
+  }
+
   .menu-button {
     display: none;
   }
@@ -531,20 +544,47 @@ p {
     height: auto;
     align-self: end;
   }
+
+  .white-container-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  gap: .5rem;
 }
+
+}
+
+
 
 /*  large styles 920px */
-/*@media screen and (min-width:920px) {
+@media screen and (min-width:920px) {
+  header, main, footer {
+  width: 100%;
+  box-sizing: border-box;
+  }
 
+  .inner-content-wrapper {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 3rem;
+  }
+
+  .white-container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    gap: .5rem;
+  }
 }
-*/
+
 /* x-large styles 1024px */
-/*@media screen and (min-width:1024px) {
-  div {
+@media screen and (min-width:1024px) {
+  .inner-content-wrapper {
     max-width: 1024px;
   }
 }
-*/
 
 /* Interaction Queries for color scheme light and dark and motion preference */
 @media (prefers-color-scheme: light) {
