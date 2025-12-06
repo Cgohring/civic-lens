@@ -259,7 +259,6 @@ form {
   box-shadow: var(--shadow);
   border: 1px solid var(--blue-bulletin);
   color: var(--watchdog-white);
-  font-optical-sizing: auto;
   font-weight: 380;
   font-style: normal;
 }
@@ -398,7 +397,6 @@ h1, h2, h3 {
 h1 {
   font-size: 3rem;
   color: var(--watchdog-white);
-  font-optical-sizing: auto;
   font-weight: 331;
   font-style: normal;
   font-variation-settings:
@@ -408,7 +406,6 @@ h1 {
 h2 {
   font-size: 2rem;
   color: var(--truth-text);
-  font-optical-sizing: auto;
   font-weight: 331;
   font-style: normal;
   font-variation-settings:
@@ -422,7 +419,6 @@ body.dark-mode h2, body.dark-mode h3  {
 h3 {
   font-size: 1.5rem;
   color: var(--truth-text);
-  font-optical-sizing: auto;
   font-weight: 331;
   font-style: normal;
   font-variation-settings:
@@ -431,7 +427,6 @@ h3 {
 
 .tagline {
   font-family: var(--font-heading);
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-variation-settings:
@@ -440,7 +435,6 @@ h3 {
 
 p.tagline {
   color: var(--watchdog-white);
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-variation-settings:
@@ -449,7 +443,6 @@ p.tagline {
 
 p {
   line-height: 1.5rem;
-  font-optical-sizing: auto;
   font-weight: 425;
   font-style: normal;
 }
@@ -654,7 +647,17 @@ body.dark-mode .article-container hr {
   }
 }
 
-/* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
-@supports (selector(:has(*))) {
+/* ADD  Feature Query for :has() that checks if the #menu-toggle is checked */
+/* I was going to write this code below but when i validate it, 
+I get a parse error because the :has feature is so new when combined with the @supports feature query...I think. 
+However, I took the :has psuedo selector from the feature query since that is what gave me the parse and I wanted my css to validate.
 
-}
+  @supports (selector(:has(*))) {
+    nav:has(#menu-toggle:checked) .menu {
+      display: block;
+    }
+  }
+*/
+  nav:has(#menu-toggle:checked) .menu {
+    display: block;
+  }
